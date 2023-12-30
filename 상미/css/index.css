@@ -1,0 +1,33 @@
+* {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+.back {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+.flower {
+    position: absolute;
+    bottom: 206px;
+    right: 650px;
+}
+.retitle {
+    position: absolute;
+    font-size: 13px;
+    margin-top: 170px;
+    color: white;
+    
+}
+.title {
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-top: 110px;
+}
+.accent {
+    font-weight: bold;
+}
+.gardener {
+    margin-left: 50px;
+}
