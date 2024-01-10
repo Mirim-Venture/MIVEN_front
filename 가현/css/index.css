@@ -1,0 +1,33 @@
+html, body{
+    /* 화면 꽉 채우기 */
+    height: 100vh;
+    width: 100vw;
+}
+html{
+    /* 해당클래스를 넘어가면 스크롤 되지 않고 숨기기 */
+    overflow: hidden;
+}
+.join{
+    width: 100vw;
+    height: 100vh;
+}
+.bakcground-video{
+    /* 요소만 스크롤 가능 */
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    /* 배경이라서 다른 요소보다 살짝 밑에 위치할 수 있도록 하기 */
+    z-index: -1;
+}
+
+/* join
+- ment container
+    + ment-first
+    + ment-second
+    + ment-third
+- join ment container
+    + who is next?
+    + join ment
+
+물방울 효과 : 크기 다양, 떠다니기    
+*/
