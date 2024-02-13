@@ -83,9 +83,22 @@ nav {
 }
 
 main {
-    width: calc(100% - 311px);
-    height: 100%;
     float: right;
+    height: 100%;
     display: flex;
-    overflow-y: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    width: calc(100% - 311px);
+    scroll-snap-type: x mandatory;
+}
+
+main img {
+    flex: 0 auto;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }
