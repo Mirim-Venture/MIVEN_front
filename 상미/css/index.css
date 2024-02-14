@@ -4,7 +4,7 @@
 .back {
     position: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .flower {
     position: absolute;
@@ -31,3 +31,5 @@
 .gardener {
     margin-left: 50px;
 }
+
+
