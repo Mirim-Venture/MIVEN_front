@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <title>MIVEN</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
     <section class="history">
-		  <video src="/video/02. sea_background_video.mp4" autoplay loop muted class="backgroud-video"></video>
-      <p class="history-text">HISTORY</p>
-      <div class="wrapper">
-        <div class="year-container">
-          <div class="box">
-            <div class="year-box first-year" click="zoomIn()"></div>
-            <p class="year">2022</p>
+        <video src="/video/02. sea_background_video.mp4" autoplay loop muted class="backgroud-video"></video>
+        <p class="history-text">HISTORY</p>
+        <div class="slide slide_wrap">
+            <div class="year-container">
+              <div class="box">
+                <div class="comming-soon">Comming Soon</div>
+              </div>
+              <div class="box">
+                  <div class="year-box first-year" click="zoomIn()"></div>
+                  <p class="year">2022</p>
+              </div>
+              <div class="box">
+                <div class="year-box second-year" click="zoomIn()"></div>
+                <p class="year">2023</p>
+              </div>
+            </div>
           </div>
-          <div class="box">
-            <div class="year-box second-year" click="zoomIn()"></div>
-            <p class="year">2023</p>
-          </div>
-          <div class="comming-soon">Comming Soon</div>
-        </div>
-      </div>
-      <footer class="footer-bar">
-        <div class="back"><i class='bx bx-chevron-left'></i></div>
-        <div class="footer-container">
-          <div class="line-container">
-            <hr class="line">
-            <p class="sub-year">21 YEAR</p>
-            <hr class="line">
-          </div>
-          <div class="dot-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-        </div>
-        <div class="next"><i class='bx bx-chevron-right' ></i></div>
-      </footer>
+          <footer class="footer-bar">
+                <div class="back"><i class='bx bx-chevron-left leftbtn'></i></div>
+                <div class="footer-container">
+                  <div class="line-container">
+                    <hr class="line">
+                    <p class="sub-year">21 YEAR</p>
+                    <hr class="line">
+                  </div>
+                  <div class="slide_pagination"></div>
+                </div>
+                <div class="next"><i class='bx bx-chevron-right rightbtn' ></i></div>
+              </footer>
     </section>
-    <script src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
+
 </html>
