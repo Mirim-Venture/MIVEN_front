@@ -67,15 +67,20 @@ nav {
     height: 74px;
     display: flex;
     color: #737373;
-    border: 1px solid;
+    border-left: none;
+    border-right: none;
     padding-left: 50px;
     align-items: center;
     list-style-type: none;
     border-image-slice: 1;
     width: calc(100% - 50px);
     border-image-repeat: stretch; 
-    border-top: 1px solid #3998FF;
-    border-image-source: linear-gradient(180deg, rgba(17, 104, 198, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+    border-top: 1px solid #a7d1ff;
+    /* border-image-source: linear-gradient(180deg, rgba(17, 104, 198, 0.37) 0%, rgba(255, 255, 255, 0) 100%); */
+}
+
+#last {
+    border-bottom: 1px solid #a7d1ff;
 }
 
 .nav-item.selected {

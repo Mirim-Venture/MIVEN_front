@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     // nav 선택 시, 색 변경
     const menuItems = document.querySelectorAll('.nav-item');
 
