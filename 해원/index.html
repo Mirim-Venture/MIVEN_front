@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>MIVEN</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
-
 <body>
-    <section class="history">
-        <video src="/video/02. sea_background_video.mp4" autoplay loop muted class="backgroud-video"></video>
-        <p class="history-text">HISTORY</p>
-        <div class="slide slide_wrap">
-            <div class="year-container">
-              <div class="box">
-                <div class="comming-soon">Comming Soon</div>
-              </div>
-              <div class="box">
-                  <div class="year-box first-year" click="zoomIn()"></div>
-                  <p class="year">2022</p>
-              </div>
-              <div class="box">
-                <div class="year-box second-year" click="zoomIn()"></div>
-                <p class="year">2023</p>
-              </div>
-            </div>
-          </div>
-          <footer class="footer-bar">
-                <div class="back"><i class='bx bx-chevron-left leftbtn'></i></div>
-                <div class="footer-container">
-                  <div class="line-container">
-                    <hr class="line">
-                    <p class="sub-year">21 YEAR</p>
-                    <hr class="line">
-                  </div>
-                  <div class="slide_pagination"></div>
-                </div>
-                <div class="next"><i class='bx bx-chevron-right rightbtn' ></i></div>
-              </footer>
-    </section>
-  <script src="./js/index.js"></script>
-</body>
 
+    <video src="/video/02. sea_background_video.mp4" autoplay loop muted class="background-video"></video>
+    <p class="history-txt">HISTORY</p>
+    <div class="wrap"> <!-- 배너표시영역 -->
+        <div class="rolling-list"> <!-- 원본배너 -->
+            <ul>
+                <li class="first-year">
+                    <div class="desc">
+                    </div>
+                    <p>2022</p>
+                </li>
+                <li class="second-year">
+                    <div class="desc">
+                    </div>
+                    <p>2023</p>
+                </li>
+                <li class="comming-soon">
+                    <div class="desc">
+                    </div>
+                    <p>Comming-soon</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer-bar">
+        <div class="back"><i class='bx bx-chevron-left leftbtn'></i></div>
+        <div class="footer-container">
+          <div class="line-container">
+            <hr class="line">
+            <p class="sub-year">21 YEAR</p>
+            <hr class="line">
+          </div>
+          <div class="slide_pagination" id="pagination"></div>
+        </div>
+        <div class="next"><i class='bx bx-chevron-right rightbtn' ></i></div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
 </html>

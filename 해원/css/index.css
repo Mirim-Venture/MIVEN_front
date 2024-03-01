@@ -1,129 +1,62 @@
 html,
 body{
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
 }
-.history{
-    width: 100vw;
+.background-video{
+    position: fixed;
     height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    z-index: -1;
+    top: 0;
 }
-.history-text{
+.history-txt{
     display: flex;
     justify-content: center;
-    align-items: center;
     color: var(--white);
     font-size: 1.5rem;
     margin-top: 5vh;
     font-weight: bolder;
 }
-.backgroud-video{
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    z-index: -1;
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
-
-.year-container.original {
-    animation: rollingleft1 90s linear infinite;
-}
-.year-container.clone {
-    animation: rollingleft2 90s linear infinite;
-    margin-left: 55%;
-}
-
-@keyframes rollingleft1 {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(-100%); }
-    50.01% { transform: translateX(100%); }
-    100% { transform: translateX(0); }
-}
-
-@keyframes rollingleft2 {
-    0% { transition: translateX(0); }
-    100% { transform: translateX(-200%); }
-}
-
-.slide {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 15vw;
-    position: relative;
-    width: 100%;
+.wrap { 
+    display: flex; 
+    align-items: center;
+    /* overflow-x: hidden; */
     height: 70vh;
-    user-select: none;
+  }
+  .wrap .rolling-list ul { 
+      display: flex;
+  }
+  .wrap .rolling-list ul li { 
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
-  .year-container{
-    display: flex;
-    flex-direction: row;
-    column-gap: 15vw;
-    justify-content: center;
-    align-items: center;
-    height: 65vh;
-    width: 100vw;
-    margin-top: 4vw;
-}
-  .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 0px;
-    width: 500px;
-    height: 500px;
-    flex-shrink: 0;
-    border-radius: 100%;
-    transition: left 0.15s;
-
+  .wrap .rolling-list ul li .desc { 
+      display: flex;
+      justify-content: center;
+      width: 500px; 
+      height: 500px; 
+      box-sizing: border-box; 
+      border-radius: 100%; 
+      margin: 0 15vw; 
+      display: flex; 
+      align-items: center; 
+      flex-shrink: 0; 
+      border: 1px solid var(--white);
+      box-shadow: 0 0 100px rgba(255, 255, 255, 0.339), 0 0 60px rgba(255, 255, 255, 0.339) inset;
+      cursor: pointer;
   }
-
-  .first-year,
-.second-year,
-.comming-soon{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 12vw; */
-    font-size: 2.2rem;
-    color: var(--white);
-    border: 1px solid var(--white);
-    border-radius: 100%;
-    max-height: 500px;
-    max-width: 500px !important;
-    min-width: 400px;
-    min-height: 400px;
-    white-space: nowrap;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.339), 0 0 60px rgba(255, 255, 255, 0.339) inset;
-    cursor: pointer;
-}
-.year{
+  .wrap .rolling-list ul li p { 
     position: absolute;
     color: var(--white);
     font-size: 2.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  .slide_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: calc(50% - 16px);
-    width: 32px;
-    height: 32px;
-    border-radius: 100%;
-    background-color: #cccc;
-    cursor: pointer;
   }
+  /* .wrap .rolling-list ul li .desc span { 
+    width: 500px !important;
+    height: 500px !important;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+  } */
 
   .footer-bar{
     display: flex;
@@ -140,7 +73,7 @@ body{
     margin-top: 25px;
 }
 
-  .back,
+.back,
 .next{
     display: flex;
     justify-content: center;
@@ -152,8 +85,7 @@ body{
     border: 1px solid var(--white);
     border-radius: 100%; /* 테두리 둥글게 */
 }
-  
-  /* 페이지네이션 스타일 */
+
   ul,
   li {
     list-style-type: none;
@@ -197,15 +129,22 @@ body{
     font-size: 1rem;
     white-space: nowrap;
 }
-  
-  .slide_item_duplicate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 0px;
-    width: 100%;
-    height: 300px;
-    flex-shrink: 0;
-    transition: left 0.15s;
-  }
+
+  .rolling-list.original {
+	animation: rollingleft1 60s linear infinite;
+}
+.rolling-list.clone {
+	animation: rollingleft2 60s linear infinite;
+}
+
+@keyframes rollingleft1 {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(-100%); }
+	50.01% { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+	0% { transition: translateX(0); }
+	100% { transform: translateX(-200%); }
+}
