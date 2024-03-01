@@ -1,6 +1,5 @@
-// 롤링 배너 복제본 생성
 let roller = document.querySelector('.rolling-list');
-roller.id = 'roller1'; // 아이디 부여
+roller.id = 'roller1';
 
 let clone = roller.cloneNode(true)
 clone.id = 'roller2';
@@ -244,6 +243,5 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(updateAnimation);
     }
 
-    // 초기 애니메이션 시작
     updateAnimation();
 });
