@@ -9,6 +9,10 @@ body{
     z-index: -1;
     top: 0;
 }
+.history{
+  overflow: hidden;
+  height: 100vh;
+}
 .history-txt{
     display: flex;
     justify-content: center;
@@ -21,7 +25,7 @@ body{
     display: flex; 
     align-items: center;
     /* overflow-x: hidden; */
-    height: 70vh;
+    height: 85%;
   }
   .wrap .rolling-list ul { 
       display: flex;
@@ -89,7 +93,7 @@ body{
     column-gap: 15px;
     justify-content: center;
   }
-  .slide_pagination > li {
+  .slide_pagination li {
     width: 12px;
     height: 12px;
     min-width: 10px;
@@ -97,7 +101,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.451);
     border-radius: 100%;
   }
-  .slide_pagination > li.active {
+  .slide_pagination li.active {
     width: 12px;
     height: 12px;
     min-width: 10px;
@@ -105,6 +109,23 @@ body{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 100%;
   }
+
+  /* .slide_pagination > .pagination {
+    width: 12px;
+    height: 12px;
+    min-width: 10px;
+    min-height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.451);
+    border-radius: 100%;
+  }
+  .slide_pagination > .pagination.active {
+    width: 12px;
+    height: 12px;
+    min-width: 10px;
+    min-height: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100%;
+  } */
   .line-container{
     display: flex;
     align-items: center;
