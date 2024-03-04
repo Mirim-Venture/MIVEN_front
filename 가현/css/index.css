@@ -1,3 +1,13 @@
+body{
+  color: #fff;
+  /* text 정렬 */
+  /* display: flex; */
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+/* video ================================================ */
 .video-area{
   position: absolute;
   top: 0;
@@ -28,4 +38,17 @@
     object-fit: cover; 
     
   }
+}
+
+/* text ================================================ */
+.main__text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.text_container{
+  text-align: center;
 }
