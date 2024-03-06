@@ -14,10 +14,7 @@ function revealImages() {
     const image3Top = image3.getBoundingClientRect().top + scrollY;
     const image4Top = image4.getBoundingClientRect().top + scrollY;
 
-    if(bf_scrollY == scrollY){
-        return;
-    }
-    bf_scrollY = scrollY;
+    
     //console.log("AAA1",image1,image2,image3,image4);
     // console.log("AAA2",windowHeight,scrollY);
     // console.log("AAA3",image1Top,image2Top,image3Top,image4Top);
@@ -31,6 +28,11 @@ function revealImages() {
     // scrollY랑 이미지들의 y값이 같으면 사진이 보이게 만들기
 
     // num11이 화면에 나타나는 경우
+    if(bf_scrollY == scrollY){
+        return;
+    }
+    bf_scrollY = scrollY;
+
     if (scrollY > image1Top - windowHeight + 100 && isFirstScroll) {
         image1.style.opacity = '1'; // 투명도를 1로 변경하여 보이게 함
         image1.style.animation = 'floatUp 0.3s ease-in-out forwards'; // floatUp 애니메이션 적용
