@@ -1,0 +1,517 @@
+
+#video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -100px; /* 초기 위치 - 이미지가 화면 아래에 숨겨져 있음 */
+    transition: bottom 0.5s ease; /* 부드러운 이동을 위한 트랜지션 */
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.t20 {
+    color: white;
+    font-style: Noto Sans;
+    font-weight: 53;
+    font-size: 17px;
+    margin-left: 28px;
+    margin-bottom: 100px;
+    top: 0; /* 스크롤할 때 상단에 고정됨 */
+    position: fixed;
+}
+
+.t21 {
+    color:white;
+    font-style: Noto Sans;
+    font-weight: 53;
+    font-size: 17px;
+    margin-left: 80px;
+    margin-top: 28px;
+    top: 0; /* 스크롤할 때 상단에 고정됨 */
+    position: fixed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1500px;
+  }
+
+#header {
+    /* 헤더를 최상위로 표시 */
+    z-index: 1000;
+    padding: 10px;
+    position: fixed;
+    top: 0; /* 스크롤할 때 상단에 고정됨 */
+    width: 100%;
+    transition: top 0.3s; /* 스크롤에 반응하는 애니메이션 설정 */
+  }
+
+#total{
+    margin-top:50px;
+}
+
+.mem{
+    color:white;
+    font-style: Noto Sans;
+    font-weight: 53;
+    font-size: 20px;
+    text-align: center;
+}
+
+.num {
+    position: relative;
+}
+  
+.num1 {
+    opacity: 0; /* 초기에는 이미지를 숨김 */
+    transition: opacity 0.5s ease-in-out; /* 부드러운 페이드 효과를 위한 트랜지션 */
+}
+
+#num {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#num1 {
+    display: none;
+    animation: floatUp 0.5s ease-in-out forwards; /* floatUp 애니메이션을 적용합니다. */
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* 시작 시 아래에서 50px 위로 이동합니다. */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* 끝나는 지점에선 위로 이동하지 않습니다. */
+    }
+}
+
+.container1, .container2, .container3, .container4 {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15, .image16, .image17, .image18, .image19, .image20, .image21, .image22 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.image2, .image4, .image6, .image8, .image10, .image12, .image14, .image16, .image18, .image20, .image22 {
+    z-index: 1;
+}
+
+.image1, .image3, .image5, .image7, .image9, .image11, .image13, .image15, .image17, .image19, .image21 {
+    width: 250px;
+}
+
+.image2, .image4, .image6, .image8, .image10, .image12, .image14, .image16, .image18, .image20, .image22  {
+    width: 250px;
+    top: 130px;
+}
+
+/* 20기 사진 위치 조정 */
+
+.image3, .image4, .image5, .image6{
+    left: 350px;
+}
+
+.image7, .image8 {
+    left: 650px;
+}
+
+.image9, .image10 {
+    left: 1220px;
+}
+
+.image5, .image6, .image7, .image8, .image9, .image10{
+    top: 100px;
+}
+
+.image6, .image8, .image10{
+    top: 200px;
+}
+
+/* 21기 사진 위치 조정 */
+
+.image13, .image14, .image19, .image20{
+    left: 350px;
+}
+
+.image15, .image16{
+    left: 810px;
+}
+
+.image21, .image22 {
+    left: 1220px;
+}
+
+.image11, .image12, .image13, .image14, .image15, .image16{
+    top: 180px;
+}
+
+.image17, .image18, .image19, .image20, .image21, .image22{
+    top: 250px;
+}
+
+.image12, .image14, .image16{
+    top:280px;
+}
+
+.image18, .image20, .image22{
+    top:350px;
+}
+
+.name {
+    position: relative;
+}
+
+.haewon {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 40px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.n{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 100px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+
+}
+
+.gayun{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 40px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.e{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 100px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.jisoo{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 110px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.w{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 170px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.sun{
+    text-align: left;
+    margin-left: 670px;
+    margin-top: 110px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.s{
+    text-align: left;
+    margin-left: 670px;
+    margin-top: 170px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.won{
+    text-align: left;
+    margin-left: 1240px;
+    margin-top: 110px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.c{
+    text-align: left;
+    margin-left: 1240px;
+    margin-top: 170px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.hyun{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 190px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.g{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 250px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.yena{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 190px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.y{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 250px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.sang{
+    text-align: left;
+    margin-left: 830px;
+    margin-top: 190px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.m{
+    text-align: left;
+    margin-left: 830px;
+    margin-top: 250px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.yun{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 260px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.a{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 320px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.eun{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 260px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.o{
+    text-align: left;
+    margin-left: 370px;
+    margin-top: 320px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+.jo{
+    text-align: left;
+    margin-left: 1240px;
+    margin-top: 260px;
+    position: absolute;
+    font-size: 15px;
+    font-style: Noto Sans;
+    font-weight: bold;
+    color: black;
+}
+
+.h{
+    text-align: left;
+    margin-left: 1240px;
+    margin-top: 320px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    color: black;
+}
+
+/* sns 버튼 삽입*/
+
+.s1{
+    text-align: left;
+    margin-left: 240px;
+    margin-top: 100px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+    /* color: white;
+    text-decoration: none; */
+
+}
+
+.s2{
+    text-align: left;
+    margin-left: 560px;
+    margin-top: 100px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+
+.s3{
+    text-align: left;
+    margin-left: 560px;
+    margin-top: 170px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+
+.s4{
+    text-align: left;
+    margin-left: 860px;
+    margin-top: 170px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+.s1 a, .s2 a, .s3 a, .s4 a, .s5 a, .s6 a, .s7 a, .s9 a, .s10 a {
+    text-decoration: none;
+    color: black;
+}
+
+.s5{
+    text-align: left;
+    margin-left: 1430px;
+    margin-top: 170px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+
+.s6{
+    text-align: left;
+    margin-left: 240px;
+    margin-top: 250px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+
+.s7{
+    text-align: left;
+    margin-left: 560px;
+    margin-top: 250px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+
+
+.s9{
+    text-align: left;
+    margin-left: 240px;
+    margin-top: 320px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
+
+.s10{
+    text-align: left;
+    margin-left: 1430px;
+    margin-top: 320px;
+    position: absolute;
+    font-size: 13px;
+    font-style: Noto Sans;
+}
