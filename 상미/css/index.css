@@ -17,9 +17,8 @@ body {
   }
   
   /* 패럴랙스 비디오 스타일 설정 */
-  .parallax-video {
-    width: 100%; /* 전체 너비 사용 */
-    height: auto; /* 자동 높이 계산 */
+  .parallax-video { /* 전체 너비 사용 */
+    height: 100vh; /* 자동 높이 계산 */
     transform: translateZ(0); /* 3D 변환 사용 */
     transition: transform 0.3s ease-out; /* 부드러운 변화 애니메이션 적용 */
   }
