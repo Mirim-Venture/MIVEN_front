@@ -4,7 +4,6 @@ body {
     padding: 0; /* 안쪽 여백 제거 */
     overflow-x: hidden; /* 스크롤 바 제거 */
   }
-  
   /* 비디오 컨테이너 스타일 설정 */
   .video-container {
     position: relative;
