@@ -5,6 +5,37 @@
     padding: 0;
     }
 
+    .slide-in{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        animation: change 0.5s ease forwards;
+        position: absolute;
+        z-index: 5;
+    }
+     
+      @keyframes change {
+        from {
+          transform: translateX(100%);
+          visibility: visible;
+        }
+      
+        to {
+          transform: translateX(0%);
+        }
+      }
+    
+      .fadeOut {
+        opacity: 0;
+        transition: opacity 1s ease;
+      }
+
+      body{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+
 #바다표지 {
     background-image: url("../imgs/바다_표지1.png");
     width: 100%;

@@ -15,25 +15,13 @@
 }
 
 #바다표지{
-    position: relative;
-    isolation: isolate;
     width: 100%;
     height: 100vh;
+    opacity: 0.1;
     flex-shrink: 0;
-    background-image: url("../imgs/바다_표지1.png");
+    position: relative;
     background-size: cover;
-    background-position: center center;
 }
-
-#바다표지::after {
-    content: '';
-    position: absolute;
-    background: white;
-    z-index: -1;
-    inset: 0;
-    opacity: 0.85;
-    
-  }
 
 #레이어 {
     position: absolute;
@@ -50,10 +38,8 @@
     right: 3%;
     width: 47px;
     height: 47px;
-    border: 1px solid #3998FF;
-    background-color: transparent;
+    color: #3998FF85;
     opacity:51%;
-    cursor: pointer;
 }
 
 #x {
@@ -61,107 +47,38 @@
     height: 13px;
     top: 50px;
     right: 3%;
-    color: #3998FF;
-    position: absolute;
+    color: #3998FF85;
 }
 
-#xx {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button{
+p{
     line-height: 5px;
+    position: absolute;
     width: 317px;
     height: 56px;
+    top: 280px;
+    left: 801px;
     font-family: 'Zen Kaku Gothic New';
     font-size: 29px;
     font-weight: 400;
     line-height: 160%;
     text-align: center;   
     color: #000000;
-    background-color: transparent;
+}
+
+p:hover {
+    color: #3998FF;
+}
+
+p{
     border: 0;
-    cursor: pointer;
-}
-
-#btns {
-    width: 400px;
-    padding: 40px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-button + button {
-
-    margin-left: 20;
-    
-    }
-
-    .button.inactive {
-        color: gray; /* 선택되지 않은 버튼 텍스트 색상 */
-      }
+    background-color: transparent;
+  }
 
 #rtg {
-    height: 100%;
+    width: 1200px;
+    height: 1080px;
+    left: 349px;
     border: 1px;
     color: #3998FF85;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
-
-.button:hover,
-.button.active {
-  color: #3998FF;
-}
-
-h5 {
-    width: 105px;
-    height: 29px;
-    top: 23%;
-    left: 45%;
-    position: absolute;
-    font-family: Zen Kaku Gothic New;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: center;
-
-}
-
-hr {
-    width: 65.5em;
-    bottom: 6%;
-    height: 0.08px;
-    border: 0;
-    position: absolute;
-    background-color: #68b1ff;
-    left: 50%;
-    transform: translate(-50%,0);
-}
-
-#icon {
-    background-color: transparent;
-    border: 0;
-    position: absolute;
-    left: 24%;
-    top: 94.6%;
-    width: 0px;
-    height: 0px;
-    cursor: pointer;
-}
-
-
 
