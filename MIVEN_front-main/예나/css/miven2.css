@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+#all {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    position: relative;
+    background-size: cover;
+    background-color: #FFFFFFE5; 
+}
+
+#바다표지{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.1;
+    flex-shrink: 0;
+    position: relative;
+    background-size: cover;
+}
+
+#레이어 {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 118px;
+    height: 36px;
+    color: #3998FF85;
+}
+
+#Group{
+    position: absolute;
+    top: 50px;
+    right: 3%;
+    width: 47px;
+    height: 47px;
+    color: #3998FF85;
+    opacity:51%;
+}
+
+#x {
+    width: 13px;
+    height: 13px;
+    top: 50px;
+    right: 3%;
+    color: #3998FF85;
+}
+
+p{
+    line-height: 5px;
+    position: absolute;
+    width: 317px;
+    height: 56px;
+    top: 280px;
+    left: 801px;
+    font-family: 'Zen Kaku Gothic New';
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;   
+    color: #000000;
+}
+
+p:hover {
+    color: #3998FF;
+}
+
+p{
+    border: 0;
+    background-color: transparent;
+  }
+
+#rtg {
+    width: 1200px;
+    height: 1080px;
+    left: 349px;
+    border: 1px;
+    color: #3998FF85;
+}
+
